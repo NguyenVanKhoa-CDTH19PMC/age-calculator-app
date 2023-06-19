@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Poppinis";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "Poppinis";
+    src: url("../fonts/Poppins-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: "Poppinis";
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "Poppinis";
+    src: url("../fonts/Poppins-ExtraBoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+
+}
+body{
+    box-sizing:content-box;
+    margin: auto;
+    background: hsl(0, 0%, 94%);
+    font-family:"Poppinis";
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+background: white;
+padding: 40px;
+margin: auto;
+border-radius: 20px 20px 120px 20px;
+
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+fieldset{
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: hsl(0, 1%, 44%);
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+input{
+    font-family: "Poppinis";
+    width: 110px;
+    font-size: 32px;
+    font-weight:bold;
+    padding: 10px 15px;
+    border: 3px solid  hsl(0, 0%, 94%);
+    border-radius: 7px ;
+}
+.error{
+    display: none;
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+.submit{
+    display: flex;
+    width:100%;
+        justify-content: center;
+        align-items: center;
+    height: 150px;
+    position: relative;
+}
+hr{
+   
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 94%);
+}
+button{
+    cursor: pointer;
+    position: absolute;
+    background: hsl(259, 100%, 65%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    z-index: 99;
+}
+button:hover{
+    background: black;
+}
+p{
+line-height: 110%;
+    top: -10px;
+    margin: 0;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+}
+p span {
+
+    color: hsl(259, 100%, 65%);
+}
+@media screen and (min-width:1440px){
+    .card{
+        min-width: 700px;
+    }
+    fieldset{
+        margin-right: 30px;
+    }
+    form{
+        justify-content: flex-start;
+    }
+    .submit {
+        height: 80px;
+       
+        }
+     button{
+right: 0;
+     }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<script src="assets/js/script.js"></script>
+  <title>Age calculator app</title>
+
+ 
+</head>
+<body>
+<main>
+  <section class="card">
+    <h1 style="display: none;">Age calculator app</h1>
+    <form id="date-form" action="">
+      <fieldset>
+        <label for="day" id="day-label" >DAY</label>
+        <input type="number" name="day" id="day" placeholder="DD">
+        <span class="error" id="day-error">error</span>
+      </fieldset>
+      <fieldset>
+        <label for="month" id="month-label">MOTNH</label>
+        <input type="number" name="month" id="month" placeholder="MM">
+        <span class="error" id="month-error">error</span>
+      </fieldset>
+      <fieldset>
+        <label for="year" id="year-label">YEAR</label>
+        <input type="number" name="year" id="year" placeholder="YYYY">
+        <span class="error" id="year-error">error</span>
+      </fieldset>
+<div class="submit"><hr><button type="submit"><img src="assets/images/icon-arrow.svg" alt="icon button"></button></div>
+
+    </form>
+   
+    <p><span id="total-year">--</span> years</p>
+    <p><span id="total-month">--</span> months</p>
+    <p><span id="total-day">--</span> days</p>
+  </section>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+</main>
+</body>
+</html>
